@@ -11,8 +11,9 @@ import { AuthGuard } from './auth.guard';
 import { RouterModule,Routes } from '@angular/router';
 
 const appRoute:Routes=[
-  { path:'login',component:layout.PublicComponent,children:[
-    {path:"login", component:user.LoginComponent},
+  { path:"",component:user.LoginComponent},
+  { path:'',component:layout.PublicComponent,children:[
+    //{path:"login", component:user.LoginComponent},
     {path:"register",component: user.RegistrationComponent},
     //{path:"resetpassword",component: ResetpasswordComponent},
     {path:"pagenotfound",component:user.PagenotfoundComponent},
