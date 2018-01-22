@@ -9,6 +9,7 @@ export class PrivateComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

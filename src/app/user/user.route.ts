@@ -1,7 +1,6 @@
-import {} from '@angular/common';
-import {} from '@angular/router';
-import { NgModule } from '@angular/core/src/metadata/ng_module';
-import { Routes } from '@angular/router/src/config';
+import { CommonModule } from '@angular/common';
+import { Routes,RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
 import * as user from './index';
 
 export const route:Routes=[
@@ -9,9 +8,14 @@ export const route:Routes=[
 ]
 
 @NgModule({
-    declarations:[],
-    imports:[],
-    exports:[]
+    declarations:[
+        ...user.usrContainer
+    ],
+    imports:[
+        CommonModule,
+        RouterModule.forChild(route)
+    ],
+    exports:[RouterModule]
 })
 
 export class UserRoute {}

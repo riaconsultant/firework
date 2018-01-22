@@ -5,8 +5,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
 
 import { environment } from '../environments/environment';
-import * as user from './user/index';
-import * as layout from './layout/index';
+//import * as user from './user/index';
+//import * as layout from './layout/index';
 import * as services from './service/index';
 import { AuthGuard } from './auth.guard';
 import { AppRoute } from './app.route';
@@ -14,7 +14,7 @@ import { AppRoute } from './app.route';
 @NgModule({
   declarations: [
     AppComponent,
-    ...layout.layoutContainer
+    //...layout.layoutContainer
   ],
   imports: [
     BrowserModule,
