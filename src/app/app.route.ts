@@ -14,7 +14,6 @@ const appRoute:Routes=[
   { path:'login',component:layout.PublicComponent,children:[
     {path:"login", component:user.LoginComponent},
     {path:"register",component: user.RegistrationComponent},
-    {path:"forgotpassword",component:user.ForgotpasswordComponent},
     //{path:"resetpassword",component: ResetpasswordComponent},
     {path:"pagenotfound",component:user.PagenotfoundComponent},
     {path:"",redirectTo:'login',pathMatch:'full'}
