@@ -18,7 +18,7 @@ const appRoute:Routes=[
     {path:"pagenotfound",component:user.PagenotfoundComponent},
     {path:"",redirectTo:'login',pathMatch:'full'}
   ]},
-  {path:'',redirectTo:'/login',pathMatch:'full'}
+  //{path:'',redirectTo:'/login',pathMatch:'full'}
 ]
 
 @NgModule({
