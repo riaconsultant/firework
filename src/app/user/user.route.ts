@@ -1,6 +1,6 @@
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes,RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
 import * as user from './index';
 
 export const route:Routes=[

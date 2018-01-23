@@ -1,8 +1,8 @@
 <div>
-  Hello Society
+  Hello Society !!
 </div>
-<form>
-  <input type="text" placeholder="Name"/>
-  <button type="submit">OK</button>
+<form #loginForm="ngForm" novalidate>
+  <input type="text" placeholder="Name" #name name="name"/>
+  <button type="submit">Submit</button>
 </form>
-{{ form.pristline }}
+{{ loginForm.value | json }}
