@@ -2,7 +2,7 @@
   Hello Society !!
 </div>
 <form #loginForm="ngForm" novalidate>
-  <input type="text" placeholder="Name" #name  name="name" [(ngModel)]="model.name" [ngModelOptions]="{standalone: false}"/>
+  <input type="text" placeholder="Name" #name  name="name" [(ngModel)]="model.name" [ngModelOptions]="{updateOn: 'blur'}"/>
   <button type="submit">Submit</button>
 </form>
 {{ loginForm.value | json }}
