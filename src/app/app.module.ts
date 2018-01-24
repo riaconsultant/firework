@@ -14,8 +14,8 @@ import { AppRoute } from './app.route';
 @NgModule({
   declarations: [
     AppComponent,
-    ...layout.layoutContainer,
-    ...user.usrContainer
+    //...layout.layoutContainer,
+    //...user.usrContainer
   ],
   imports: [
     BrowserModule,

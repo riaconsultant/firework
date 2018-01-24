@@ -2,7 +2,8 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import * as user from './index';
 import { UserRoute } from './user.route';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
     declarations:[
