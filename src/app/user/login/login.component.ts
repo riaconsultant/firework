@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -16,6 +17,9 @@ export class LoginComponent implements OnInit,OnDestroy {
 
   ngOnDestroy(){
 
+  }
+  loginMe(form:NgForm){
+    console.log(form.value);
   }
 
 }

@@ -1,8 +1,9 @@
 <div>
   Hello Society !!
 </div>
-<form #loginForm="ngForm" novalidate>
-  <input type="text" placeholder="Name" #name  name="name" [(ngModel)]="model.name" [ngModelOptions]="{updateOn: 'blur'}"/>
-  <button type="submit">Submit</button>
+<form #loginForm="ngForm" novalidate (submit)="loginMe(loginForm)">
+  <input type="text" placeholder="Email" #name  name="email" [(ngModel)]="model.email" [ngModelOptions]="{updateOn: 'blur'}"/>
+  <input type="password" placeholder="Password" #name  name="password" [(ngModel)]="model.password" [ngModelOptions]="{updateOn: 'blur'}"/>
+  <button type="submit">login</button>
 </form>
 {{ loginForm.value | json }}
