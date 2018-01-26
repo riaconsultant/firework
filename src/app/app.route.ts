@@ -9,15 +9,8 @@ import * as services from './service/index';
 import { AuthGuard } from './auth.guard';
 import { RouterModule,Routes } from '@angular/router';
 
-const appRoute:Routes=[
-  //{ path:"login",loadChildren:'./user/user.module#UserModule'},
-  // { path:'',component:layout.PublicComponent,children:[
-     {path:"login", component:user.LoginComponent},
-  //   {path:"register",component: user.RegistrationComponent},
-  //   //{path:"resetpassword",component: ResetpasswordComponent},
-  //   {path:"pagenotfound",component:user.PagenotfoundComponent},
-  //   {path:"",redirectTo:'login',pathMatch:'full'}
-  // ]},
+const appRoute:Routes=[  
+  {path:"login", component:user.LoginComponent},
   {path:'',redirectTo:'/login',pathMatch:'full'}
 ]
 
