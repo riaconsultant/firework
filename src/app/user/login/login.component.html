@@ -6,4 +6,5 @@
   <input type="password" placeholder="Password" #name  name="password" [(ngModel)]="model.password" [ngModelOptions]="{updateOn: 'blur'}"/>
   <button type="submit">login</button>
 </form>
+<a routerLink="/register">Register Account ?</a>
 {{ loginForm.value | json }}
