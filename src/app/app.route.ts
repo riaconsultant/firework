@@ -12,7 +12,8 @@ import { RouterModule,Routes } from '@angular/router';
 const appRoute:Routes=[  
   {path:"login", component:user.LoginComponent},
   {path:"register", component:user.RegistrationComponent},
-  {path:'',redirectTo:'/login',pathMatch:'full'}
+  {path:'',redirectTo:'/login',pathMatch:'full'},
+  { path:"**", component:user.PagenotfoundComponent}
 ]
 
 @NgModule({
