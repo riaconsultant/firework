@@ -12,6 +12,7 @@ import { RouterModule,Routes, PreloadAllModules } from '@angular/router';
 const appRoute:Routes=[  
   {path:"login", component:user.LoginComponent},
   {path:"register", component:user.RegistrationComponent},
+  {path:"forgotpassword", component:user.ForgotpasswordComponent},
   {path:'',redirectTo:'/login',pathMatch:'full',data:{ preload:false}},
   { path:"**", component:user.PagenotfoundComponent}
 ]

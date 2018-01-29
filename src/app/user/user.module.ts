@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import * as user from './index';
 import { UserRoute } from './user.route';
 import { FormsModule } from '@angular/forms';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 
 
 @NgModule({
     declarations:[
-        ...user.usrContainer
+        ...user.usrContainer,
+        ForgotpasswordComponent
     ],
     imports:[
         CommonModule,
