@@ -1,11 +1,16 @@
 <div>
-<form onsubmit="">
+<form (ngSubmit)="registerMe(registerForm)" #registerForm>
   <div>
-    <label>First Name</label>
+    <label>Name</label>
     <input type="text" />
   </div>
   <div>
-    <button class="btn btn-primary">Submit</button>
+      <label>Email</label>
+      <input type="text" />
+    </div>
+  <div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="reset" class="btn btn-default">Reset</button>
   </div>
 </form>
 <a routerLink="/login">Sign In</a>

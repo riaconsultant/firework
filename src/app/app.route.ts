@@ -7,7 +7,7 @@ import * as user from './user/index';
 //import * as layout from './layout/index';
 import * as services from './service/index';
 import { AuthGuard } from './auth.guard';
-import { RouterModule,Routes } from '@angular/router';
+import { RouterModule,Routes, PreloadAllModules } from '@angular/router';
 
 const appRoute:Routes=[  
   {path:"login", component:user.LoginComponent},
@@ -18,7 +18,7 @@ const appRoute:Routes=[
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(appRoute)
+    RouterModule.forRoot(appRoute,{preloadingStrategy:PreloadAllModules})
   ],
   exports:[
     RouterModule
