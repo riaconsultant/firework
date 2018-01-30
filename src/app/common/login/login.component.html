@@ -6,5 +6,9 @@
   <input type="password" placeholder="Password" #name  name="password" [(ngModel)]="model.password" [ngModelOptions]="{updateOn: 'blur'}"/>
   <button type="submit">login</button>
 </form>
-<a routerLink="/register">Register Account ?</a>
+<button (click)="socialLogin('g')">Login with Google + </button>
+<button (click)="socialLogin('fb')">Login with Facebook </button>
+<button (click)="socialLogin('t')">Login with Twitter </button>
+<button (click)="socialLogin('git')">Login with Github </button>
+<a routerLink="/register">Register Account ?</a>|<a routerLink="/forgotpassword">Forgot Password?</a>
 {{ loginForm.value | json }}

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
 
-import * as user from './user/index';
+import * as user from './common/index';
 //import * as layout from './layout/index';
 import * as services from './service/index';
 import { AuthGuard } from './auth.guard';

@@ -18,9 +18,14 @@ export class LoginComponent implements OnInit,OnDestroy {
   ngOnDestroy(){
 
   }
-  
+
   loginMe(form:NgForm){
     console.log(form.value);
+  }
+  socialLogin(arg:String){
+    if(arg=='g'){
+      
+    }
   }
 
 }
