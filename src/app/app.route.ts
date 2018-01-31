@@ -3,18 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
 
-import * as user from './common/index';
+import * as common from './common/index';
+import * as profile from './profile/index';
 //import * as layout from './layout/index';
 import * as services from './service/index';
 import { AuthGuard } from './auth.guard';
 import { RouterModule,Routes, PreloadAllModules } from '@angular/router';
+import { UserResolverService } from './service/user-resolver.service';
 
 const appRoute:Routes=[  
-  {path:"login", component:user.LoginComponent},
-  {path:"register", component:user.RegistrationComponent},
-  {path:"forgotpassword", component:user.ForgotpasswordComponent},
-  {path:'',redirectTo:'/login',pathMatch:'full',data:{ preload:false}},
-  { path:"**", component:user.PagenotfoundComponent}
+  {path:"login", component:common.LoginComponent},
+  {path:"register", component:common.RegistrationComponent},
+  {path:"forgotpassword", component:common.ForgotpasswordComponent},
+  {path:"profile",component:profile.UserComponent,data:{ preload:false},resolve:{users:UserResolverService}},
+  {path:'',redirectTo:'/login',pathMatch:'full'},
+  { path:"**", component:common.PagenotfoundComponent}
 ]
 
 @NgModule({

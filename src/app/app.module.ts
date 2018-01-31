@@ -4,6 +4,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
 import { AngularFireModule} from 'angularfire2';
+import { HttpClientModule} from '@angular/common/http';
 
 import { environment } from '../environments/environment';
 import * as user from './common/index';
@@ -25,6 +26,7 @@ import { UserComponent } from './profile/user/user.component';
     AppRoute,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.config),
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
