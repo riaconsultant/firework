@@ -23,6 +23,7 @@ export class LoginComponent implements OnInit,OnDestroy {
     console.log(form.value);
   }
   socialLogin(arg:String){
+    console.log(arg);
     if(arg=='g'){
       
     }
